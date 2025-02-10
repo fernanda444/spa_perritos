@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spa de Perritos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>🐶 Spa de Perritos 🛁</h1>
+    <label for="dogName">Nombre del perrito:</label>
+    <input type="text" id="dogName" placeholder="Escribe un nombre...">
+    <button onclick="saveName()">Guardar Nombre</button>
+    <br><br>
+    <img id="dogImage" src="img/perrito_sucio.png" alt="Perrito sucio">
+    <p id="status">El perrito está sucio. ¡Ayúdalo a limpiarse!</p>
+    <button onclick="bathe()">Bañar 🚿</button>
+    <button onclick="dry()">Secar 💨</button>
+    <button onclick="comb()">Peinar ✂️</button>
+    <button onclick="love()">Darle amor ❤️</button>
+    <div id="progressContainer"><div id="progressBar"></div></div>
+    <p>Amor recibido: <span id="loveCount">0</span> ❤️</p>
+    <script src="script.js"></script>
+</body>
+</html>
